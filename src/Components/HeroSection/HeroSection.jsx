@@ -7,10 +7,10 @@ import Pdf from "./../../assets/pdf/Dhiraj Bhawsasr Resume(Updated).pdf";
 const HeroSection = () => {
   const texts = useMemo(
     () => [
+      "I'm Ojasvi Bakshi",
       "I'm Full Stack Developer",
-      "I'm Dhiraj",
-      "How are you?",
-      "Welcome to My Portfolio",
+      // "How are you?",
+      // "Welcome to My Portfolio",
     ],
     []
   );
@@ -49,7 +49,7 @@ const HeroSection = () => {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
     link.href = Pdf;
-    link.setAttribute("download", "Dhiraj Bhawsasr Resume(Updated).pdf");
+    link.setAttribute("download", "Ojasvi resume.pdf");
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -57,7 +57,7 @@ const HeroSection = () => {
   };
 
   const handleContactInfo = () => {
-    window.open("mailto:Dhirajbhavsar.official@gmail.com");
+    window.open("mailto:ojasvi.bakshi@gmail.com");
   };
 
   return (
