@@ -26,7 +26,7 @@ A modern, responsive, and animated personal portfolio website built to showcase 
 
 | Hero Section | About Section |
 | :---: | :---: |
-| ![Hero](https://via.placeholder.com/400x200?text=Hero+Section) | ![About](https://via.placeholder.com/400x200?text=About+Section) |
+| ![Hero](https://via.placeholder.com/400x200?text=Hero+Section) | !(![About](image.png)) |
 
 ## 🚀 Getting Started
 
@@ -49,14 +49,13 @@ Follow these steps to run the project locally on your machine.
     ```bash
     npm install
     # or
-    yarn install
+    npm i 
     ```
 
 3.  **Start the development server**
     ```bash
     npm run dev
-    # or
-    npm start
+
     ```
 
 4.  Open [http://localhost:5173](http://localhost:5173) (or localhost:3000) to view it in the browser.
@@ -77,7 +76,7 @@ src/
 ## 📬 Contact Me
 ### I am currently open to new opportunities and collaborations!
 
-LinkedIn: [Linkedin]https://www.linkedin.com/in/OjasviBakshi
+LinkedIn: [Linkedin](https://www.linkedin.com/in/OjasviBakshi)
 
 GitHub: [Instagram](https://www.instagram.com/ojasvi.bakshi)
 
