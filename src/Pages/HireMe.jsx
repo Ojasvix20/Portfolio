@@ -3,6 +3,7 @@ import { Button, Input, Textarea, Typography } from "@material-tailwind/react";
 import { motion, useInView } from "framer-motion";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ImageFooter from "../assets/Img/FormfooterImage.png";
+import emailjs from "@emailjs/browser";
 
 function HireMe() {
   const [formData, setFormData] = useState({
@@ -11,6 +12,7 @@ function HireMe() {
     email: "",
     message: "",
   });
+  const [isSending, setIsSending] = useState(false);
 
   const handleChange = (e) => {
     setFormData((prev) => ({
@@ -21,17 +23,48 @@ function HireMe() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Basic validation
     if (!formData.firstName || !formData.email || !formData.message) {
       alert("Please fill in all required fields.");
       return;
     }
 
-    // You can process the form data here, for example, log it or send it to a server.
-    console.log("Form Data Submitted:", formData);
+    setIsSending(true);
 
-    // Reset the form after submission
-    setFormData({ firstName: "", lastName: "", email: "", message: "" });
-    alert("Your message has been sent successfully!");
+    const templateParams = {
+      firstName: formData.firstName,
+      lastName: formData.lastName || " ",
+      email: formData.email,
+      message: formData.message,
+    };
+
+    emailjs
+      .send(
+        "service_rewdq7h", // ✅ YOUR SERVICE ID
+        "template_i8e99ng", // ❗ replace this
+        templateParams,
+        "w8H3cnXs2fH4-qcfT" // ❗ replace this
+      )
+      .then(
+        () => {
+          alert("Your message has been sent successfully 🚀");
+
+          setFormData({
+            firstName: "",
+            lastName: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.error("EmailJS Error:", error);
+          alert("Something went wrong. Please try again.");
+        }
+      )
+      .finally(() => {
+        setIsSending(false);
+      });
   };
 
   const sectionRef = useRef(null);
@@ -40,9 +73,16 @@ function HireMe() {
   const handleBack = () => window.history.back();
 
   return (
-    <section ref={sectionRef} className="overflow-x-hidden min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
+    <section
+      ref={sectionRef}
+      className="overflow-x-hidden min-h-screen bg-gradient-to-br from-black via-gray-900 to-black"
+    >
       <nav className="fixed top-0 left-0 w-full py-4 px-4 md:px-10 z-30 backdrop-blur-lg md:backdrop-blur-none md:bg-transparent">
-        <button onClick={handleBack} className="p-2.5 md:p-4 rounded-full border border-white text-white hover:bg-white hover:text-black transition-all" aria-label="Go Back">
+        <button
+          onClick={handleBack}
+          className="p-2.5 md:p-4 rounded-full border border-white text-white hover:bg-white hover:text-black transition-all"
+          aria-label="Go Back"
+        >
           <ArrowBackIcon className="text-xl md:text-2xl" />
         </button>
       </nav>
@@ -54,14 +94,22 @@ function HireMe() {
           transition={{ duration: 0.6 }}
           className="text-center "
         >
-          <Typography variant="h5" className="text-base sm:text-lg lg:text-2xl mb-2">
+          <Typography
+            variant="h5"
+            className="text-base sm:text-lg lg:text-2xl mb-2"
+          >
             Let’s Work Together
           </Typography>
-          <Typography variant="h1" className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-4">
+          <Typography
+            variant="h1"
+            className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-4"
+          >
             Hire Me for Your Next Project
           </Typography>
           <p className="text-gray-400 max-w-xl sm:max-w-2xl mx-auto text-sm sm:text-base lg:text-lg mb-10 sm:mb-12">
-            Looking for a passionate developer to bring your ideas to life? Whether it's frontend, backend, or full-stack work — I’m here to help you build something great.
+            Looking for a passionate developer to bring your ideas to life?
+            Whether it's frontend, backend, or full-stack work — I’m here to
+            help you build something great.
           </p>
         </motion.div>
 
@@ -90,13 +138,27 @@ function HireMe() {
                 <label htmlFor="firstName" className="text-sm mb-1 block">
                   First Name <span className="text-red-500">*</span>
                 </label>
-                <Input id="firstName" name="firstName" value={formData.firstName} onChange={handleChange} size="lg" className="shadow-md rounded-md" />
+                <Input
+                  id="firstName"
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  size="lg"
+                  className="shadow-md rounded-md"
+                />
               </div>
               <div>
                 <label htmlFor="lastName" className="text-sm mb-1 block">
                   Last Name
                 </label>
-                <Input id="lastName" name="lastName" value={formData.lastName} onChange={handleChange} size="lg" className="shadow-md rounded-md" />
+                <Input
+                  id="lastName"
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  size="lg"
+                  className="shadow-md rounded-md"
+                />
               </div>
             </div>
 
@@ -104,19 +166,43 @@ function HireMe() {
               <label htmlFor="email" className="text-sm mb-1 block">
                 Email <span className="text-red-500">*</span>
               </label>
-              <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} size="lg" className="shadow-md rounded-md" />
+              <Input
+                id="email"
+                name="email"
+                type="email"
+                value={formData.email}
+                onChange={handleChange}
+                size="lg"
+                className="shadow-md rounded-md"
+              />
             </div>
 
             <div className="mt-4">
               <label htmlFor="message" className="text-sm mb-1 block">
                 Message <span className="text-red-500">*</span>
               </label>
-              <Textarea id="message" name="message" rows={6} value={formData.message} onChange={handleChange} placeholder="Tell me about your project..." className="rounded-md shadow-md pt-4" />
+              <Textarea
+                id="message"
+                name="message"
+                rows={6}
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Tell me about your project..."
+                className="rounded-md shadow-md pt-4"
+              />
             </div>
 
             <motion.div className="mt-6" whileTap={{ scale: 0.97 }}>
-              <Button type="submit" className="w-full bg-green-600 hover:bg-green-700 rounded-md transition-all duration-300">
-                Send Request
+              <Button
+                type="submit"
+                disabled={isSending}
+                className={`w-full rounded-md transition-all duration-300 ${
+                  isSending
+                    ? "bg-gray-500 cursor-not-allowed"
+                    : "bg-green-600 hover:bg-green-700"
+                }`}
+              >
+                {isSending ? "Sending..." : "Send Request"}
               </Button>
             </motion.div>
           </motion.form>

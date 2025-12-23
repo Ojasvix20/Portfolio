@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import Html from "../../assets/Img/Html.png";
 import Css from "../../assets/Img/Css.png";
-import Sass from "../../assets/Img/Sass.png";
+import javaImage from "../../assets/Img/java.png";
 import Tailwind from "../../assets/Img/Tailwind.png";
 import Javascript from "../../assets/Img/JavaScript.png";
 import ReactImg from "../../assets/Img/React.png";
@@ -16,15 +16,15 @@ import NodeJS from "../../assets/Img/BackendIcons/Node.png";
 import Express from "../../assets/Img/BackendIcons/expressJs.png";
 import MongoDB from "../../assets/Img/BackendIcons/db.png";
 import Firebase from "../../assets/Img/BackendIcons/Firebase.png";
-import JwtImage from "../../assets/Img/BackendIcons/jwt.png";
+import SQLImage from "../../assets/Img/BackendIcons/sql.png";
 import Figma from "../../assets/Img/figma.png";
 import PostMan from "../../assets/Img/BackendIcons/ThunderClient.png";
 import MaterialUi from "../../assets/Img/Material Ui.png";
 
 const frontendSkills = [
+  { name: "Java", image: javaImage },
   { name: "HTML", image: Html },
   { name: "CSS", image: Css },
-  { name: "Sass", image: Sass },
   { name: "Tailwind CSS", image: Tailwind },
   { name: "JavaScript", image: Javascript },
   { name: "React.js", image: ReactImg },
@@ -43,7 +43,7 @@ const backendSkills = [
   { name: "MongoDB", image: MongoDB },
   { name: "PostMan", image: PostMan },
   { name: "Firebase", image: Firebase },
-  { name: "JWT", image: JwtImage }
+  { name: "SQL", image: SQLImage }
 ];
 
 const generateRandomColors = (length) => {

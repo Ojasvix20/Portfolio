@@ -9,8 +9,8 @@ import ProjectFourImage from "./../../assets/Img/AgeCal.png";
 import ProjectFiveImage from "./../../assets/Img/emoji.png";
 import ProjectSixImage from "./../../assets/Img/PassGen.png";
 import ProjectSevenImage from "./../../assets/Img/githubFinder.png";
-import ProjectImage from "./../../assets/Img/amazonwebsite.png";
-import InstagramClone from "./../../assets/Img/InstagramClone.png";
+import KisaanMitrImage from "./../../assets/Img/kisaanmitr.png";
+import MuseumProject from "./../../assets/Img/museumProject.png";
 
 // tech icons
 import html from "./../../assets/Img/Html.png";
@@ -19,30 +19,33 @@ import react from "../../assets/Img/reactBasic.png";
 import tailwind from "../../assets/Img/Tailwind.png";
 import js from "../../assets/Img/JavaScript.png";
 import firebase from "./../../assets/Img/firebase1.png";
-import nodejs from "./../../assets/Img/BackendIcons/expressJs.png";
+import nodejs from "./../../assets/Img/BackendIcons/node.png";
 import expressJs from "./../../assets/Img/BackendIcons/db.png";
 import mongoDb from "./../../assets/Img/BackendIcons/Node.png";
 import framer from "./../../assets/Img/BackendIcons/framer.png";
 import Jwt from "./../../assets/Img/BackendIcons/jwt.png";
+import googleTranslate from "./../../assets/Img/google_translate.png";
+import TFLogo from "./../../assets/Img/tflogo.png";
+
 
 const projects = [
   {
-    title: "Instagram Clone",
+    title: "Museum Ticket Booking ChatBot",
     description:
-      "A full-featured Instagram clone built using React.js, Firebase, MongoDB, Express.js, Tailwind CSS, and Socket.io. It replicates core Instagram features like image posting, commenting, real-time chat (in progress), and authentication via email and phone. Designed with a responsive UI, this project is the starting point for building my own creative and fully customized social media platform. Open to collaboration and contributions.",
-    link: "https://github.com/DhirajJSX/InstagramClone-",
-    image: InstagramClone,
-    goLive: "https://dhirajbhawsar-portfolio.vercel.app/",
-    tech: [react, tailwind, nodejs, expressJs, mongoDb, framer, Jwt],
+      "A smart museum chatbot ticketing system built using modern web technologies that enables visitors to inquire about exhibits, timings, and book tickets through conversational interaction. The system automates ticket booking, improves user engagement, and reduces manual workload, serving as a foundation for a scalable and intelligent visitor management platform.",
+    link: "https://github.com/Ojasvix20/ChatBot-Ticketing-System",
+    image: MuseumProject,
+    goLive: "https://ojasvix20.github.io/ChatBot-Ticketing-System/",
+    tech: [html, css, js, react, tailwind, nodejs, googleTranslate],
   },
   {
-    title: "Amazon Clone",
+    title: "Kisaan Mitr - Farmer's Friend ",
     description:
-      "The Amazon Clone project is a dynamic web application that replicates the core functionalities and design aesthetics of the renowned e-commerce platform, Amazon. Developed using React.js for frontend, Vite for efficient build process, Tailwind CSS for styling, and Firebase for authentication, the Amazon Clone is a testament to modern web development technologies.",
-    link: "https://github.com/DhirajJSX/AmazonClone_React-MCT-",
-    image: ProjectImage,
-    goLive: "https://amazon-clone-react-mct.vercel.app/",
-    tech: [react, tailwind, firebase],
+      "Kisaan Mitr is a farmer-centric smart application designed to assist farmers with crop guidance, weather updates, and agricultural insights through a simple and accessible interface. The platform aims to bridge the technology gap in agriculture by providing timely information and decision support, serving as a foundation for a scalable digital farming assistant.",
+    link: "https://github.com/Ojasvix20/Kisaan-Mitr-Website",
+    image: KisaanMitrImage,
+    goLive: "https://ojasvix20.github.io/Kisaan-Mitr-Website/",
+    tech: [react, tailwind, nodejs, html, css, googleTranslate, TFLogo],
   },
   {
     title: "Gmail Clone",
