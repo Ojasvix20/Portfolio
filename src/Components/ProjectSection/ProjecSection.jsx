@@ -2,13 +2,6 @@ import { motion } from "framer-motion";
 import { GitHub, AttachFile } from "@mui/icons-material";
 import "./ProjectSection.css";
 
-import ProjectOneImage from "./../../assets/Img/Gmail Project.png";
-import ProjectTwoImage from "./../../assets/Img/gym.png";
-import ProjectThreeImage from "./../../assets/Img/phone.png";
-import ProjectFourImage from "./../../assets/Img/AgeCal.png";
-import ProjectFiveImage from "./../../assets/Img/emoji.png";
-import ProjectSixImage from "./../../assets/Img/PassGen.png";
-import ProjectSevenImage from "./../../assets/Img/githubFinder.png";
 import KisaanMitrImage from "./../../assets/Img/kisaanmitr.png";
 import MuseumProject from "./../../assets/Img/museumProject.png";
 
