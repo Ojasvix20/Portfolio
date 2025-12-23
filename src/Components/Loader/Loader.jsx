@@ -17,7 +17,7 @@ const Loader = () => {
       className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black z-[9999]"
       initial={{ scale: 2, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
-      transition={{ duration: 1.5, ease: "easeInOut" }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
     >
       {/* Central Core with a fixed shape */}
       <motion.div

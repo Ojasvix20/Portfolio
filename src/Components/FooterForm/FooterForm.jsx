@@ -68,7 +68,7 @@ function FooterForm() {
           transition={{ delay: 0.2, duration: 0.6 }}
         >
           <Typography variant="h1" className="mb-4 text-3xl lg:text-5xl">
-            Hire Me for Your Next Project
+            Contact Me for Your Next Project
           </Typography>
         </motion.div>
 
@@ -84,7 +84,7 @@ function FooterForm() {
         <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start">
           <motion.img
             src={ImageFooter}
-            alt="hire me illustration"
+            alt="contact me illustration"
             className="w-full h-auto max-w-full object-contain"
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}

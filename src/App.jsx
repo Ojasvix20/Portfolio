@@ -4,7 +4,7 @@ import './App.css';
 import Loader from './Components/Loader/Loader';
 import CursorEffect from './Components/CursorEffect/CursorEffect';
 import ParticlesBG from './Components/Particles/Particles';
-import HireMe from './Pages/HireMe'; // Import HireMe component
+import ContactMe from './Pages/ContactMe'; // Import ContactMe component
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   if (loading) {
-    return <Loader />;
+    // return <Loader />;
   }
 
   return (
@@ -25,7 +25,7 @@ function App() {
       <ParticlesBG />
       <Routes>
         <Route path="/" element={<CursorEffect />} /> 
-        <Route path="/hireme" element={<HireMe />} /> 
+        <Route path="/contactme" element={<ContactMe />} /> 
       </Routes>
     </BrowserRouter>
   );

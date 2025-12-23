@@ -5,7 +5,7 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ImageFooter from "../assets/Img/FormfooterImage.png";
 import emailjs from "@emailjs/browser";
 
-function HireMe() {
+function ContactMe() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -104,7 +104,7 @@ function HireMe() {
             variant="h1"
             className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-4"
           >
-            Hire Me for Your Next Project
+            Contact Me for Your Next Project
           </Typography>
           <p className="text-gray-400 max-w-xl sm:max-w-2xl mx-auto text-sm sm:text-base lg:text-lg mb-10 sm:mb-12">
             Looking for a passionate developer to bring your ideas to life?
@@ -116,7 +116,7 @@ function HireMe() {
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 items-start">
           <motion.img
             src={ImageFooter}
-            alt="hire me"
+            alt="Contact me"
             className="w-full max-w-full object-contain mx-auto lg:mx-0"
             loading="lazy"
             initial={{ opacity: 0, x: -50 }}
@@ -212,4 +212,4 @@ function HireMe() {
   );
 }
 
-export default HireMe;
+export default ContactMe;

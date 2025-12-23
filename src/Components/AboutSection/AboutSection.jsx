@@ -45,7 +45,7 @@ const AboutSection = () => {
               // UPDATED: Brightened red slightly for better contrast on dark bg
               className="text-yellow-500" 
               initial={{ opacity: 0, scale: 0.8, translateY: 30 }} 
-              animate={{ opacity: 1, scale: 1, translateY: 0, transition: { duration: 1, delay: 0.8 } }}
+              animate={{ opacity: 1, scale: 1, translateY: 0, transition: { duration: 1, delay:0.5 } }}
             >
               About
             </motion.span>
@@ -53,7 +53,7 @@ const AboutSection = () => {
               // UPDATED: Changed "Me" from text-black to text-white
               className="text-white"
               initial={{ opacity: 0, scale: 0.8, translateY: 30 }} 
-              animate={{ opacity: 1, scale: 1, translateY: 0, transition: { duration: 1, delay: 0.8 } }}
+              animate={{ opacity: 1, scale: 1, translateY: 0, transition: { duration: 1, delay: 0.6 } }}
             >
               &nbsp;Me
             </motion.span>

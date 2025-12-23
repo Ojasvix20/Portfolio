@@ -22,8 +22,8 @@ const Header = () => {
   const sectionOffsets = useRef({});
   const navigate = useNavigate();
 
-  const hireMe = () => {
-    navigate("/hireme");
+  const ContactMe = () => {
+    navigate("/Contactme");
   };
 
   const handleMobileMenuClick = () => setIsMobileMenuOpen((prev) => !prev);
@@ -184,12 +184,12 @@ const Header = () => {
             ))}
             <li className="text-white flex justify-center items-center transition-all duration-200 cursor-pointer group md:hidden">
               <button
-                onClick={hireMe}
+                onClick={ContactMe}
                 className="relative inline-flex items-center justify-center px-4 py-3 overflow-hidden font-medium border border-gray-200 bg-white rounded-[12px] shadow-md group hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out w-full md:w-auto"
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-blue-100 via-transparent to-blue-100 opacity-0 group-hover:opacity-60 transition-all duration-300 rounded-[12px] blur-sm"></span>
                 <span className="relative z-10 flex items-center font-Josefin text-black text-base tracking-wide">
-                  <span className="mr-2">Hire Me</span>
+                  <span className="mr-2">Contact Me</span>
                   <WorkIcon className="text-black transition-transform duration-300 group-hover:rotate-[6deg] group-hover:scale-110" />
                 </span>
               </button>
@@ -198,12 +198,12 @@ const Header = () => {
         </motion.div>
         <div className="hidden md:flex items-center justify-center">
           <button
-            onClick={hireMe}
+            onClick={ContactMe}
             className="relative inline-flex items-center justify-center px-4 py-3 overflow-hidden font-medium border border-gray-200 bg-white rounded-[10px] shadow-md group hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out"
           >
             <span className="absolute inset-0 bg-gradient-to-r from-blue-100 via-transparent to-blue-100 opacity-0 group-hover:opacity-60 transition-all duration-300 rounded-[12px] blur-sm"></span>
             <span className="relative z-10 flex items-center font-Josefin text-black text-base tracking-wide">
-              <span className="mr-2">Hire Me</span>
+              <span className="mr-2">Contact Me</span>
               <WorkIcon className="text-black transition-transform duration-300 group-hover:rotate-[6deg] group-hover:scale-110" />
             </span>
           </button>

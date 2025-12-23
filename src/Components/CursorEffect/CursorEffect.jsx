@@ -9,7 +9,7 @@ import ScrollToTopButton from './../ScrollToTopButton/ScrollToTopButton'
 // import { gsap } from 'gsap';
 import './CursorEffect';
 import FooterForm from '../FooterForm/FooterForm'
-import HireMe from '../../Pages/HireMe'
+import ContactMe from '../../Pages/ContactMe'
 
 
 function CursorEffect() {
@@ -22,7 +22,7 @@ function CursorEffect() {
       <SkillSection />
       <ProjectSection />
       {/* <FooterForm /> */}
-      {/* <HireMe /> */}
+      {/* <ContactMe /> */}
       <Footer />
     </>
   );
