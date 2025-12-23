@@ -26,7 +26,7 @@ A modern, responsive, and animated personal portfolio website built to showcase 
 
 | Hero Section | About Section |
 | :---: | :---: |
-| ![Hero](https://via.placeholder.com/400x200?text=Hero+Section) | !(![About](image.png)) |
+| ![Hero](./src/assets/Img/heroSection.png) | ![About](./src/assets/Img/aboutSection.png) |
 
 ## 🚀 Getting Started
 
