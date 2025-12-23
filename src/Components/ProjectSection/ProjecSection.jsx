@@ -47,69 +47,7 @@ const projects = [
     goLive: "https://ojasvix20.github.io/Kisaan-Mitr-Website/",
     tech: [react, tailwind, nodejs, html, css, googleTranslate, TFLogo],
   },
-  {
-    title: "Gmail Clone",
-    description:
-      "This Gmail clone project demonstrates my ability to develop a web application with modern technologies, focusing on user authentication and email functionality. It showcases my skills in front-end development with HTML, CSS, and JavaScript, as well as my ability to integrate third-party APIs for extended functionality.",
-    link: "https://github.com/DhirajJSX/Geekthone_GmailClone",
-    image: ProjectOneImage,
-    goLive: "https://geekthone-gmail-clone.vercel.app/",
-    tech: [html, tailwind, js],
-  },
-  {
-    title: "GitHub Finder",
-    description:
-      "This GitHub Finder project demonstrates my ability to develop a web application with modern technologies, focusing on user authentication and email functionality. It showcases my skills in front-end development with HTML, CSS, and JavaScript, as well as my ability to integrate third-party APIs for extended functionality.",
-    link: "https://github.com/DhirajJSX/Github_Finder",
-    image: ProjectSevenImage,
-    goLive: "https://github-finder-xi-lac.vercel.app/",
-    tech: [html, tailwind, js],
-  },
-  {
-    title: "Gym Website",
-    description:
-      "GymFit is a modern, responsive web application designed to provide users with a comprehensive fitness experience. The website showcases a variety of exercises through engaging GIFs, helping users to understand and perform exercises correctly.",
-    link: "https://github.com/DhirajJSX/GYMFIT-REACT",
-    image: ProjectTwoImage,
-    goLive: "https://gymfit-opal.vercel.app/",
-    tech: [html, tailwind, js],
-  },
-  {
-    title: "Phone Search",
-    description:
-      "I developed a fully responsive mobile search website using HTML, CSS (Tailwind CSS), and JavaScript. This project demonstrates my skills in front-end web development and my ability to create dynamic, user-friendly interfaces. The website is designed to search for information on a particular website via an API, providing real-time results.",
-    link: "https://github.com/DhirajJSX/Iphone-web-Weakly-test-4-",
-    image: ProjectThreeImage,
-    goLive: "https://iphone-web-weakly-test-4.vercel.app/",
-    tech: [html, tailwind, js],
-  },
-  {
-    title: "Age Calculator",
-    description:
-      "I developed a user-friendly Age Calculator using HTML, CSS, Tailwind, and JavaScript. This project demonstrates my skills in front-end development, including responsive design and interactive user interfaces. The Age Calculator allows users to input their birthdate and quickly find out their exact age in years, months, and days.",
-    link: "https://github.com/DhirajJSX/Age_Calculator",
-    image: ProjectFourImage,
-    goLive: "https://dhirajbhavsar9900.github.io/Age_Calculator/",
-    tech: [html, css, js],
-  },
-  {
-    title: "Emoji Search",
-    description:
-      "The Emoji Search Website is an interactive web application designed to help users find and copy their favorite emojis quickly and efficiently. This project was built using HTML, CSS, and JavaScript, with a focus on providing a seamless user experience through intuitive design and functionality.",
-    link: "https://github.com/DhirajJSX/Emojis_Searching_Project",
-    image: ProjectFiveImage,
-    goLive: "https://emojis-searching-project.vercel.app/",
-    tech: [html, css, js],
-  },
-  {
-    title: "PassGenerator",
-    description:
-      "I developed a Password Generator website using React and Vite, aiming to provide users with a secure and convenient way to generate strong, random passwords. This project highlights my skills in modern frontend development, including state management, user interface design, and performance optimization with Vite.",
-    link: "https://github.com/Dhirajbhavsar9900/Weakly-Test-01",
-    image: ProjectSixImage,
-    goLive: "https://weakly-test-01.vercel.app/",
-    tech: [html, tailwind, js],
-  },
+  
 ];
 const ProjectSection = () => {
   return (
