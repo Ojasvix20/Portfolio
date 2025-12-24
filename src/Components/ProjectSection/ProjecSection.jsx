@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { GitHub, AttachFile } from "@mui/icons-material";
 import "./ProjectSection.css";
 
-import KisaanMitrImage from "./../../assets/Img/kisaanmitr.png";
+import KisaanMitrImage from "./../../assets/Img/kisaanMitr.png";
 import MuseumProject from "./../../assets/Img/museumProject.png";
 
 // tech icons

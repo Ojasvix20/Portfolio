@@ -1,6 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-// Importing standard MUI icons for the contact details
+import { useNavigate } from "react-router-dom"; // 1. Import useNavigate
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -8,12 +7,19 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import SendIcon from "@mui/icons-material/Send"; // 2. Import Icon for button
 
 // Make sure this path matches where your image is actually stored!
 import ProfileImage from "./../../assets/Img/Wink Emoji GIF - Wink Emoji Apple - Discover & Share GIFs.gif"; 
 import "./Footer.css";
 
 const Footer = () => {
+  const navigate = useNavigate(); // 3. Initialize navigation
+
+  const handleContactClick = () => {
+    navigate("/Contactme"); // 4. Define click handler
+  };
+
   return (
     <footer className="bg-[#171c28] text-white pt-16 pb-4 font-sans">
       <div className="container mx-auto px-4 md:px-10 lg:px-20">
@@ -49,11 +55,27 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="mb-8 font-medium">
+            <div className="mb-6 font-medium">
               Open for opportunities: <span className="text-green-400 font-bold">YES</span>
             </div>
 
-            {/* Social Icons - DEMO LINKS ADDED HERE */}
+            {/* NEW CONTACT BUTTON ADDED HERE */}
+            <div className="mb-8">
+                <button
+                    onClick={handleContactClick}
+                    className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-white transition duration-300 ease-out border-2 border-pink-500 rounded-full shadow-md group"
+                >
+                    <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-pink-500 group-hover:translate-x-0 ease">
+                        <SendIcon fontSize="small" />
+                    </span>
+                    <span className="absolute flex items-center justify-center w-full h-full text-pink-500 transition-all duration-300 transform group-hover:translate-x-full ease">
+                        Contact Me
+                    </span>
+                    <span className="relative invisible">Contact Me</span>
+                </button>
+            </div>
+
+            {/* Social Icons */}
             <div className="flex gap-4 justify-center md:justify-start">
               <SocialIcon href="https://github.com/Ojasvix20" icon={<GitHubIcon />} color="bg-gray-800" />
               <SocialIcon href="https://www.instagram.com/ojasvi.bakshi" icon={<InstagramIcon />} color="bg-pink-600" />
@@ -76,7 +98,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Copyright Bar */}
-      <div className="mt-16 pt-6 border-t border-gray-800 text-center text-gray-500 text-sm">
+      <div className="mt-4 pt-4 border-t border-gray-800 text-center text-gray-500 text-sm">
         <div className="flex flex-col md:flex-row justify-between items-center container mx-auto px-4 md:px-10">
           <div className="font-bold text-lg text-gray-300">Ojasvi Bakshi</div>
           <div className="mt-2 md:mt-0">Copyright © 2025 Ojasvi-Portfolio.com</div>
