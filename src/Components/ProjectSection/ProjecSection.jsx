@@ -12,7 +12,7 @@ import react from "../../assets/Img/reactBasic.png";
 import tailwind from "../../assets/Img/Tailwind.png";
 import js from "../../assets/Img/JavaScript.png";
 import firebase from "./../../assets/Img/firebase1.png";
-import nodejs from "./../../assets/Img/BackendIcons/node.png";
+import nodejs from "./../../assets/Img/BackendIcons/Node.png";
 import expressJs from "./../../assets/Img/BackendIcons/db.png";
 import mongoDb from "./../../assets/Img/BackendIcons/Node.png";
 import framer from "./../../assets/Img/BackendIcons/framer.png";
