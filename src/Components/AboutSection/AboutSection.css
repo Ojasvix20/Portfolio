@@ -9,7 +9,10 @@
   }
 
   #aboutmeImag {
-    max-width: 80%;
+    /* width: 100px; */
+    /* height: 500px; */
+    max-width: 100%;
+    /* min-width: 100%; */
     margin-bottom: 30px;
   }
 
